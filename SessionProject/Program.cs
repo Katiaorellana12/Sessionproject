@@ -219,7 +219,36 @@ namespace SessionProject
                 }
             }
         }
+        static void login()
+        {
 
+
+            Console.WriteLine("Ingrese usuario:");
+            String username = Console.ReadLine();
+            Console.WriteLine("Ingrese contraseña:");
+            String password = Console.ReadLine();
+            if (session.login(username, password))
+            {
+                if (username.Equals("admin"))
+                {
+                    isAdmin = true;
+                    printMenuAdmin();
+                }
+                else
+                {
+                    isAdmin = false;
+                    printMenuOther();
+                }
+
+                menus();
+            }
+            else
+            {
+                Console.WriteLine("Usuario o contraseña incorrectos");
+                login();
+            }
+
+        }
 
 
 
