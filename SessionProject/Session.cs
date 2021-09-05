@@ -87,3 +87,71 @@ namespace SessionProject
                 fileManager.writeFile("admin:123", fileStoreCredentials);
             }
         }
+        public Boolean login(String username, String password)
+        {
+            Boolean loginSuccess = false;
+
+            if (username.Equals("admin") && password.Equals(passwordAdmin))
+                return true;
+
+            string[] lines = this.fileManager.getLines(this.fileStoreCredentials);
+            for (int index = 0; index < lines.Length; index++)
+            {
+
+                string[] credentials = lines[index].Split(':');
+
+                if (credentials.Length > 1)
+                {
+                    if (loginSuccess)
+                        break;
+
+                    if (credentials[0].Equals(username) && credentials[1].Replace("\r", "").Equals(password))
+                    {
+
+                        loginSuccess = true;
+                    }
+                    else
+                    {
+
+                        loginSuccess = false;
+                    }
+
+                }
+
+
+
+            }
+            return loginSuccess;
+        }
+
+        public void addCredential(String username, String password)
+        {
+            fileManager.writeFile(username + ":" + password, fileStoreCredentials);
+        }
+
+
+        public void addTextFile(String text, String fileName)
+        {
+
+            fileManager.writeFile(text, fileName);
+        }
+
+
+        public void deleteFile(String fileName)
+        {
+            fileManager.deleteFile(fileName);
+        }
+
+        public void newFile(String fileName)
+        {
+            fileManager.createFile(fileName);
+        }
+
+        public String readFile(String fileName)
+        {
+            return fileManager.readFile(fileName);
+        }
+
+
+    }
+}

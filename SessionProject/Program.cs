@@ -15,6 +15,8 @@ namespace SessionProject
             login();
 
         }
+
+
         static void menus()
         {
             String option = Console.ReadLine();
@@ -219,6 +221,7 @@ namespace SessionProject
                 }
             }
         }
+
         static void login()
         {
 
@@ -250,6 +253,23 @@ namespace SessionProject
 
         }
 
+        static void printMenuAdmin()
+        {
+            Console.WriteLine("O P C I O N E S");
+            Console.WriteLine("\t1. Registrar nuevo usuario y contraseña:");
+            Console.WriteLine("\t2. Ver registros:");
+            Console.WriteLine("\t3. Crear registros:");
+            Console.WriteLine("\t4. Borrar registro:");
+            Console.WriteLine("\t5. Salir");
 
+        }
 
-        
+        static void printMenuOther()
+        {
+            Console.WriteLine("O P C I O N E S");
+            Console.WriteLine("\t1. Leer Archivo");
+            Console.WriteLine("\t2. Salir");
+
+        }
+    }
+}
