@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Erick Cano\\Documents\\ERRRR\\Sessionproject\\SessionProject\\SessionProject.csproj": {}
+    "C:\\Users\\HP\\OneDrive\\Documentos\\Nueva carpeta (2)\\Sessionproject\\SessionProject\\SessionProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Erick Cano\\Documents\\ERRRR\\Sessionproject\\SessionProject\\SessionProject.csproj": {
+    "C:\\Users\\HP\\OneDrive\\Documentos\\Nueva carpeta (2)\\Sessionproject\\SessionProject\\SessionProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Erick Cano\\Documents\\ERRRR\\Sessionproject\\SessionProject\\SessionProject.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\OneDrive\\Documentos\\Nueva carpeta (2)\\Sessionproject\\SessionProject\\SessionProject.csproj",
         "projectName": "SessionProject",
-        "projectPath": "C:\\Users\\Erick Cano\\Documents\\ERRRR\\Sessionproject\\SessionProject\\SessionProject.csproj",
-        "packagesPath": "C:\\Users\\Erick Cano\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Erick Cano\\Documents\\ERRRR\\Sessionproject\\SessionProject\\obj\\",
+        "projectPath": "C:\\Users\\HP\\OneDrive\\Documentos\\Nueva carpeta (2)\\Sessionproject\\SessionProject\\SessionProject.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\OneDrive\\Documentos\\Nueva carpeta (2)\\Sessionproject\\SessionProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Erick Cano\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
